@@ -2,10 +2,18 @@
   "cSpell.words": [
     "antd",
     "craco",
+    "kanban",
     "less",
     "logo",
     "plugin",
     "tr",
     "trílogo"
+  ],
+  "cSpell.ignoreWords": [
+    "abertos",
+    "arquivados",
+    "executados",
+    "quadro",
+    "vistoriados"
   ]
 }
