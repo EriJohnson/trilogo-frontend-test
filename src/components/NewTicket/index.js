@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import { Modal, Button, Form, Input, Select, Upload } from 'antd'
+import { Modal, Button, Form, Row, Input, Select, Upload } from 'antd'
 
 import { PlusOutlined, InboxOutlined } from '@ant-design/icons'
 
@@ -69,7 +69,9 @@ const NewTicket = () => {
             colon={false}
           >
             <Select>
-              <Select.Option value='demo'>Demo</Select.Option>
+              <Select.Option value='demo'>Procedimento</Select.Option>
+              <Select.Option value='demo'>Bem</Select.Option>
+              <Select.Option value='demo'>Predial</Select.Option>
             </Select>
           </Form.Item>
           <Form.Item
@@ -84,7 +86,8 @@ const NewTicket = () => {
             colon={false}
           >
             <Select>
-              <Select.Option value='demo'>Demo</Select.Option>
+              <Select.Option value='demo'>Yudi Tadashiro</Select.Option>
+              <Select.Option value='demo'>Priscila Alcântara</Select.Option>
             </Select>
           </Form.Item>
 
@@ -107,15 +110,17 @@ const NewTicket = () => {
             </Form.Item>
           </Form.Item>
           <Form.Item>
-            <Button
-              type='primary'
-              htmlType='submit'
-              shape='round'
-              size='small'
-              onClick={() => alert('Ticket criado')}
-            >
-              Criar ticket
-            </Button>
+            <Row justify='end'>
+              <Button
+                type='primary'
+                htmlType='submit'
+                shape='round'
+                size='small'
+                onClick={() => alert('Ticket criado')}
+              >
+                Criar ticket
+              </Button>
+            </Row>
           </Form.Item>
         </Form>
       </Modal>
