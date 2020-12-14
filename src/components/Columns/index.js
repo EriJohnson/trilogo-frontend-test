@@ -1,9 +1,7 @@
 import './styles.less'
+import Ticket from '../Ticket'
 
-function Column(props) {
-  const title = props.title
-  console.log('title', title)
-
+function Column({ title }) {
   function verifyClassName(title) {
     const Types = {
       Executados: 'column__header--executados',
@@ -17,12 +15,15 @@ function Column(props) {
 
   const typeColumn = verifyClassName(title)
 
-  console.log(typeColumn)
-
   return (
     <div className='column'>
       <div className={`column__header ${typeColumn}`}>
-        <span>{props.title}</span>
+        <span>{title}</span>
+      </div>
+      <div className='column__content'>
+        <Ticket type='Procedimento' />
+        <Ticket type='Bem' />
+        <Ticket type='Predial' />
       </div>
     </div>
   )
