@@ -1,11 +1,13 @@
 .column {
   flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
   background: #ffffff;
   min-width: 275px;
   border-radius: 8px;
   width: 25%;
-  height: 100%;
   margin-left: 20px;
+  height: 96%;
 }
 
 .column:first-child {
@@ -42,8 +44,13 @@
 
 .column__content {
   padding: 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  overflow: auto;
+  height: 90%;
+}
+
+.column__button {
+  width: 90%;
+  background: #8d89a5;
+  color: #ffffff;
+  margin-bottom: 8px;
 }
