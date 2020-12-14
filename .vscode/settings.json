@@ -1,7 +1,13 @@
 {
   "cSpell.words": [
     "antd",
+    "atribua",
+    "cancelar",
+    "cascader",
     "craco",
+    "criar",
+    "descreva",
+    "escolha",
     "kanban",
     "less",
     "logo",
@@ -11,14 +17,28 @@
   ],
   "cSpell.ignoreWords": [
     "abertos",
+    "anexar",
+    "ao",
     "arquivados",
+    "arraste",
     "chuveiro",
     "consertar",
+    "descri",
+    "descrição",
     "editar",
     "excluir",
     "executados",
+    "imagem",
+    "o",
+    "para",
     "procedimento",
     "quadro",
+    "respons",
+    "responsável",
+    "ticket",
+    "tipo",
+    "uma",
+    "vel",
     "vistoriados"
   ]
 }

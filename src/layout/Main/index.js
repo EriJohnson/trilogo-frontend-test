@@ -1,10 +1,11 @@
 import React from 'react'
 
-import { Layout, Button } from 'antd'
-import { PlusOutlined } from '@ant-design/icons'
+import { Layout } from 'antd'
+
 import Logo from '../../assets/logo.svg'
 
 import Kanban from '../../components/Kanban'
+import NewTicket from '../../components/NewTicket'
 
 const { Header, Content } = Layout
 
@@ -16,14 +17,7 @@ const Main = () => {
           <img src={Logo} alt='Logo da trílogo' />
         </div>
         <div>
-          <Button
-            type='primary'
-            size='large'
-            shape='round'
-            icon={<PlusOutlined />}
-          >
-            Novo ticket
-          </Button>
+          <NewTicket />
         </div>
       </Header>
       <Content
