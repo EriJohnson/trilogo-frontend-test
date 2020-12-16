@@ -1,4 +1,6 @@
 import './styles.less'
+import { Row, Button } from 'antd'
+
 import Ticket from '../Ticket'
 
 function Column({ title }) {
@@ -25,6 +27,11 @@ function Column({ title }) {
         <Ticket type='Bem' />
         <Ticket type='Predial' />
       </div>
+      <Row justify='center'>
+        <Button className='column__button' shape='round'>
+          Carregar mais
+        </Button>
+      </Row>
     </div>
   )
 }
