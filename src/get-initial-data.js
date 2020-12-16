@@ -1,13 +1,20 @@
-let uniqueId = 0
+const ticketsTypes = ['Bem', 'Predial', 'Procedimento']
+const assignees = ['Priscila Alcântara', 'Yudi Tadashiro']
+
+let uniqueId = 6523
 function getItems(count) {
   return Array.from({ length: count }, (v, k) => {
     const id = uniqueId++
+    const randomType = Math.floor(Math.random() * ticketsTypes.length)
+    const typeChosen = ticketsTypes[randomType]
+    const randomAssignee = Math.floor(Math.random() * assignees.length)
+    const assigneeChosen = assignees[randomAssignee]
     return {
-      id: `id:${id}`,
+      id: `${id}`,
       text: `item ${id}`,
-      type: `Predial ${id}`,
+      type: typeChosen,
       description: `lorem ipsum... ${id} `,
-      assignee: `fulano ${id}`,
+      assignee: assigneeChosen,
     }
   })
 }

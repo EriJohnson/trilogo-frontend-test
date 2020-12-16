@@ -13,12 +13,9 @@ const Main = () => {
   return (
     <Layout style={{ height: '100vh' }}>
       <Header className='header' style={{ padding: '0 60px' }}>
-        <div>
-          <img src={Logo} alt='Logo da trílogo' />
-        </div>
-        <div>
-          <NewTicket />
-        </div>
+        <img src={Logo} alt='Logo da trílogo' />
+
+        <NewTicket />
       </Header>
       <Content
         style={{
