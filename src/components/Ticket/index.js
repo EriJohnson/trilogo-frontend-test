@@ -15,7 +15,7 @@ const menu = (
   </Menu>
 )
 
-const Ticket = ({ type }) => {
+const Ticket = ({ id, type, description, assignee }) => {
   return (
     <div className='ticket'>
       <div className='ticket__header'>
@@ -32,16 +32,16 @@ const Ticket = ({ type }) => {
       </div>
       <div className='ticket__content'>
         <div>
-          <span className='number'>53876</span>
+          <span className='number'>{id}</span>
         </div>
 
         <div>
-          <span className='description'>Consertar chuveiro...</span>
+          <span className='description'>{description}</span>
         </div>
       </div>
       <div className='ticket__footer'>
         <div>
-          <span className='assignee'>Yudi Tamashiro</span>
+          <span className='assignee'>{assignee}</span>
         </div>
         <div>
           <Dropdown
