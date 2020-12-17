@@ -46,7 +46,7 @@ const ItemList = React.memo(function ItemList({ column, index }) {
         return (
           <div>
             <FixedSizeList
-              height={608}
+              height={592}
               itemCount={itemCount}
               itemSize={146}
               width={'100%'}
